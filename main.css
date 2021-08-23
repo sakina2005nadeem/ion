@@ -18,6 +18,7 @@
 	outline:none !important;
 }
 
+
 html {
 	scroll-behavior:smooth;
 }
@@ -29,7 +30,7 @@ body{
 }
 
 a{
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 a:hover{
@@ -585,6 +586,7 @@ a:hover{
 	color:var(--color-one);
 	text-align:left;
 	padding-top:3vw;
+	text-decoration:none !important;
 }
 
 .footer i {
@@ -634,6 +636,175 @@ a:hover{
 }
 
 .cake h1 {
+	font-family: 'Sacramento', cursive;
+	color:var(--color-one);
+	font-size:12vw;
+	z-index:999;
+	margin-top:4vw;
+	text-align:center;
+	animation:glow 1.5s ease-in-out infinite alternate;
+}
+
+/*PASTRIES*/
+
+.pas {
+	height:50%;
+	width:100%;
+	top:0;
+	right:0;
+	left:0;
+	background-color:rgba(0,0,0,0.2);
+	overflow-x:hidden;
+	padding-top:0;
+}
+
+.pas::before {
+	position:absolute;
+	background-size:cover;
+	background-position:center;
+	height:50%;
+	width:100%;
+	z-index:-1;
+	content:"";
+	background-image:url(images/pastry.jpg);
+}
+
+.pas h1 {
+	font-family: 'Sacramento', cursive;
+	color:var(--color-one);
+	font-size:12vw;
+	z-index:999;
+	margin-top:4vw;
+	text-align:center;
+	animation:glow 1.5s ease-in-out infinite alternate;
+}
+
+/*BREADS AND BUNS*/
+
+.bb {
+	height:50%;
+	width:100%;
+	top:0;
+	right:0;
+	left:0;
+	background-color:rgba(0,0,0,0.2);
+	overflow-x:hidden;
+	padding-top:0;
+}
+
+.bb::before {
+	position:absolute;
+	background-size:cover;
+	background-position:center;
+	height:50%;
+	width:100%;
+	z-index:-1;
+	content:"";
+	background-image:url(images/buns.jpg);
+}
+
+.bb h1 {
+	font-family: 'Sacramento', cursive;
+	color:var(--color-one);
+	font-size:12vw;
+	z-index:999;
+	margin-top:4vw;
+	text-align:center;
+	animation:glow 1.5s ease-in-out infinite alternate;
+}
+
+/*COOKIES AND BISCUITS*/
+
+.cb {
+	height:72%;
+	width:100%;
+	top:0;
+	right:0;
+	left:0;
+	background-color:rgba(0,0,0,0.2);
+	overflow-x:hidden;
+	padding-top:0;
+}
+
+.cb::before {
+	position:absolute;
+	background-size:cover;
+	background-position:center;
+	height:72%;
+	width:100%;
+	z-index:-1;
+	content:"";
+	background-image:url(images/biscuits.jpg);
+}
+
+.cb h1 {
+	font-family: 'Sacramento', cursive;
+	color:var(--color-one);
+	font-size:12vw;
+	z-index:999;
+	margin-top:4vw;
+	text-align:center;
+	animation:glow 1.5s ease-in-out infinite alternate;
+}
+
+/*DOUNUTS*/
+
+.doun {
+	height:50%;
+	width:100%;
+	top:0;
+	right:0;
+	left:0;
+	background-color:rgba(0,0,0,0.2);
+	overflow-x:hidden;
+	padding-top:0;
+}
+
+.doun::before {
+	position:absolute;
+	background-size:cover;
+	background-position:center;
+	height:50%;
+	width:100%;
+	z-index:-1;
+	content:"";
+	background-image:url(images/dounuts.jpg);
+}
+
+.doun h1 {
+	font-family: 'Sacramento', cursive;
+	color:var(--color-one);
+	font-size:12vw;
+	z-index:999;
+	margin-top:4vw;
+	text-align:center;
+	animation:glow 1.5s ease-in-out infinite alternate;
+}
+
+/*CONFECTIONS*/
+.confec {
+	height:50%;
+	width:100%;
+	top:0;
+	right:0;
+	left:0;
+	background-color:rgba(0,0,0,0.2);
+	overflow-x:hidden;
+	padding-top:0;
+}
+
+.confec::before {
+	position:absolute;
+	background-size:cover;
+	background-position:center;
+	height:50%;
+	width:100%;
+	z-index:-1;
+	content:"";
+	background-image:url(images/chocs.jpg);
+}
+
+.confec h1 {
 	font-family: 'Sacramento', cursive;
 	color:var(--color-one);
 	font-size:12vw;
