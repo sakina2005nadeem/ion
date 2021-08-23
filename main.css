@@ -70,7 +70,7 @@ a:hover{
 	font-size:17vw;
 	z-index:999;
 	margin-top:14vw;
-	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff;
+	animation:glow 1.5s ease-in-out infinite alternate;
 }
 
 /*NAVBAR*/
@@ -138,6 +138,7 @@ a:hover{
 
 .navb .bar a:hover{
 	font-weight:bold;
+	transition:0.4s;
 }
 
 .nav-small .logo {
@@ -336,7 +337,6 @@ a:hover{
 
 .pro .card-text {
 	font-family: 'EB Garamond', serif;
-	font-weight:bold;
 	text-align:left;
 	font-size:20px;
 	text-shadow: 1px 1px 2px #000000;
@@ -486,7 +486,7 @@ a:hover{
 }
 
 #modal3 {
-	background-image:url(images/cater.png);
+	background-image:url(images/cater.jpg);
 	background-position:bottom;
 }
 
@@ -640,6 +640,7 @@ a:hover{
 	z-index:999;
 	margin-top:4vw;
 	text-align:center;
+	animation:glow 1.5s ease-in-out infinite alternate;
 }
 
 .menu {
@@ -657,18 +658,22 @@ a:hover{
 
 .menu button {
 	font-family: 'EB Garamond', serif;
-	font-size:25px;
+	font-size:20px;
 	text-align:center;
 	padding-top:0;
-	padding:1vw;
+	padding-top:1vw;
 	color:var(--color-three);
 	text-decoration:none !important;
 	margin-bottom:2vw;
+	float:center;
 }
 
+.menu .card  button {
+	padding:10px;
+}
 
 .menu .card {
-	height:52vh;
+	height:50vh;
 	margin-top:1vw;
 	margin-bottom:1vw;
 	margin-left:1vw;
@@ -682,12 +687,6 @@ a:hover{
 
 .menu .card img{
 	height:170px;
-}
-
-.menu button{
-	float:center;
-	font-family: 'EB Garamond', serif;
-	font-size:20px;
 }
 
 .menu .card-text {
@@ -725,4 +724,14 @@ a:hover{
 		background-image:url(images/bg0.jpg);
 	}
 	
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--color-three);
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--color-three);
+  }
 }
